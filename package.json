@@ -1,0 +1,23 @@
+{
+  "name": "blue-coffee",
+  "version": "1.0.0",
+  "description": "Blue_coffee node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoSantana0005/Blue-Coffee.git"
+  },
+  "author": "Jose Santana",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoSantana0005/Blue-Coffee/issues"
+  },
+  "homepage": "https://github.com/JoSantana0005/Blue-Coffee#readme",
+  "dependencies": {
+    "express": "^4.21.2",
+    "zod": "^3.24.2"
+  }
+}
