@@ -1,6 +1,6 @@
 @keyframes slide {
     0% {
-        background-position: 0 0;
+        background-position: 0 10%;
     }
     100% {
         background-position: 0 100%;
@@ -9,8 +9,8 @@
 
 #hero article:first-child {
     background: url('/assets/brand/TextBackgroundIndex.svg');
-    background-size: auto;
-    background-position: center;
+    background-size: 100%;
+    background-position: bottom;
     background-repeat: repeat-y;
-    animation: slide 4500ms linear infinite;
+    animation: slide 1s linear infinite;   
 }
