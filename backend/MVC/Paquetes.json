@@ -4,7 +4,8 @@
         "name": "Cafe Molido",
         "description": "Paquete de cafe molido de 250 gramos",
         "price": 5.00,
-        "type": "molido",
+        "cant_gram": 250,
+        "type": ["molido"],
         "imagen": ""
         
     },
@@ -13,7 +14,7 @@
         "name": "Cafe Grano",
         "description": "Paquete de cafe en grano de 250 gramos",
         "price": 5.00,
-        "type": "grano",
+        "type": ["grano"],
         "imagen": ""
     }
 ]
