@@ -79,6 +79,33 @@ export class CapsulasModels{
         }
     }
 
+    // Obtener una capsula de cafe segun su id y precio
+
+    static async getByIDAndPrice({id, price_capsula}){
+        if(id && price_capsula){
+            return capsulas.find(capsula =>
+                capsula.id === parseInt(id) && capsula.price_capsula === parseInt(price_capsula)
+            )
+        }
+        else{
+            console.log("No se ha encontrado ninguna capsula de cafe con ese id y precio");
+            return null;
+        }
+    }
+
+    // Obtener una capsula de cafe segun su id y cantidad de gramos
+    static async getByIDAndGram({id, cant_gram}){
+        if(id && cant_gram){
+            return capsulas.find(capsula =>
+                capsula.id === parseInt(id) && capsula.cant_gram === parseInt(cant_gram)
+            )
+        }
+        else{
+            console.log("No se ha encontrado ninguna capsula de cafe con ese id y cantidad de gramos");
+            return null;
+        }
+    }
+
     // Crear una capsula de cafe
    
     static async CreateCapsula({capsula}){

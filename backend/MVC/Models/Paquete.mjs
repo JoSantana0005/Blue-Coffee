@@ -70,6 +70,34 @@ export class PaquetesModels{
         }
     }
 
+    // Obtener un paquete de cafe segun su id y precio
+    
+    static async getByIDPrice({id, price}){
+        if(id && price){
+            return paquetes.find(paquete =>
+                paquete.id === parseInt(id) && paquete.price === parseInt(price)
+            )
+        }
+        else{
+            console.log("No se ha encontrado ningun paquete de cafe con ese id y precio");
+            return null;
+        }
+    }
+
+    // Obtener un paquete de cafe segun su id y cantidad de gramos
+    
+    static async getByIDGram({id, cant_gram}){
+        if(id && cant_gram){
+            return paquetes.find(paquete =>
+                paquete.id === parseInt(id) && paquete.cant_gram === parseInt(cant_gram)
+            )
+        }
+        else{
+            console.log("No se ha encontrado ningun paquete de cafe con ese id y cantidad de gramos");
+            return null;
+        }
+    }
+
     // Crear un paquete de cafe
     static async createPaquete({paquete}){
         if(paquete){

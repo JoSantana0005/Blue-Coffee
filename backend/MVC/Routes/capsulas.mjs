@@ -13,6 +13,8 @@ CapsulasRouter.get("/name/:name_capsula", capsulascontroller.getByName);
 CapsulasRouter.get("/grams/:cant_gram", capsulascontroller.getByGrams);
 CapsulasRouter.get("/type/:type_capsula", capsulascontroller.getByType);
 CapsulasRouter.get("/:id", capsulascontroller.getByID);
+CapsulasRouter.get("/:id&:cant_gram", capsulascontroller.getByIDAndGram);
+CapsulasRouter.get("/:id&:price_capsula", capsulascontroller.getByIDAndPrice);
 
 /// POST
 CapsulasRouter.post("/", capsulascontroller.create);

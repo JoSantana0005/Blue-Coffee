@@ -94,6 +94,33 @@ export class PaqueteController{
         }
     }
 
+    // Obtener un paquete de cafe segun su id y precio
+    
+    getByIDAndPrice = async ( req, res ) =>{
+        const {id,price} = req.params;
+        try{
+            const PaqueteIDPrice = await this.PaquetesModels.getByIDPrice({id, price});
+            return res.status(200).json(PaqueteIDPrice);
+        }
+        catch(err){
+            console.log(`Ocurrio un error ${err}`);
+            return res.status(500).json({error: err});
+        }
+    } 
+
+    // Obtener un paquete de cafe por su id y cantidad de gramos
+    getByIDAndGram = async ( req, res ) =>{
+        const {id,cant_gram} = req.params;
+        try{
+            const PaqueteIDGram = await this.PaquetesModels.getByIDAndGram({id, cant_gram});
+            return res.status(200).json(PaqueteIDGram);
+        }
+        catch(err){
+            console.log(`Ocurrio un error ${err}`);
+            return res.status(500).json({error: err});
+        }
+    }
+
     // Crear un paquete de cafe
 
     CreatePaquete = async ( req, res) => {

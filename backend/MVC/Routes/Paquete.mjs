@@ -14,6 +14,8 @@ ProductRouter.get("/name/:name", paquetecontroller.getByName);
 ProductRouter.get("/type/:type", paquetecontroller.getByType);
 ProductRouter.get("/grams/:cant_gram", paquetecontroller.getByGram);
 ProductRouter.get("/:id", paquetecontroller.getByID);
+ProductRouter.get("/:id&:grams", paquetecontroller.getByIDAndGram);
+ProductRouter.get("/:id&:price", paquetecontroller.getByIDAndPrice);
 
 /// POST
 ProductRouter.post("/", paquetecontroller.CreatePaquete);

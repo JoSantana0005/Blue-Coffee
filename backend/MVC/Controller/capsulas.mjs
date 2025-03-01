@@ -88,6 +88,34 @@ export class CapsulasControllers{
         }
     }
 
+    // Obtener una capsula segun su id y precio
+    
+    getByIDAndPrice = async ( req, res ) =>{
+        const {id, price_capsula} = req.params;
+        try{
+            const CapsulasIDPrice = await this.CapsulasModels.getByIDPrice({id, price_capsula});
+            return res.status(200).json(CapsulasIDPrice);
+        }
+        catch(err){
+            console.log(`Ocurrio un error ${err}`);
+            return res.status(500).json({error: err});
+        }
+    }
+
+    // Obtener una capsula por su id y cantidad de gramos
+    
+    getByIDAndGram = async ( req, res ) =>{
+        const {id, cant_gram} = req.params;
+        try{
+            const CapsulasIDGram = await this.CapsulasModels.getByIDGram({id, cant_gram});
+            return res.status(200).json(CapsulasIDGram);
+        }
+        catch(err){
+            console.log(`Ocurrio un error ${err}`);
+            return res.status(500).json({error: err});
+        }
+    }
+
     // Crear una capsula de cafe
     
     create = async ( req, res ) =>{
