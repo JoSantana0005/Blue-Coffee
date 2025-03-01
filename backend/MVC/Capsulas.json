@@ -4,7 +4,7 @@
         "name_capsula": "Original Party",
         "description_capsula": "Capsula de cafe molido de 450 gramos",
         "price_capsula": 29.00,
-        "grams_cant": 450,
+        "cant_gram": 450,
         "type_capsula": "molido",
         "imagen_capsula": ""
     },
@@ -13,7 +13,7 @@
         "name_capsula": "Original Ron",
         "description_capsula": "Capsula de cafe ron de 470 gramos",
         "price_capsula": 35.00,
-        "grams_cant": 470,
+        "cant_gram": 470,
         "type_capsula": "ron",
         "imagen_capsula": ""
     }
