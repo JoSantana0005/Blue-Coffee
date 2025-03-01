@@ -15,3 +15,22 @@ GET http://localhost:8080/paquetes/type/Grano
 
 ### Obtener un paquete de cafe por su id
 GET http://localhost:8080/paquetes/1
+
+
+### Obtener todas las capsulas
+GET http://localhost:8080/capsulas
+
+### Obtener una capsula por su precio
+GET http://localhost:8080/capsulas/price/5.00
+
+### Obtener una capsula por su nombre
+GET http://localhost:8080/capsulas/name/Original Party
+
+### Obtener una capsula por su cantidad de gramos
+GET http://localhost:8080/capsulas/grams/470
+
+### Obtener una capsula por su tipo
+GET http://localhost:8080/capsulas/type/Molido
+
+### Obtener una capsula por su id
+GET http://localhost:8080/capsulas/1

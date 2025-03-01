@@ -14,7 +14,7 @@ export class CapsulasModels{
     static async getByPrice({price_capsula}){
         if(price_capsula){
             return capsulas.filter(capsula =>
-                capsula.price_capsula === parseInt(price)
+                capsula.price_capsula === parseInt(price_capsula)
             )
         }
         else{
@@ -28,7 +28,7 @@ export class CapsulasModels{
     static async getByName({name_capsula}){
         if(name_capsula){
             return capsulas.find(capsula =>
-                capsula.name_capsula === name
+                capsula.name_capsula === name_capsula
             )
         }
         else{
