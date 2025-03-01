@@ -1,0 +1,11 @@
+[
+    {
+        "id": 1,
+        "name": "Original Party",
+        "description": "Capsula de cafe molido de 450 gramos",
+        "price": 29.00,
+        "type": ["molido"],
+        "image": "",
+        "cant_gram": 450
+    }
+]

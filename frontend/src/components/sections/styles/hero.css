@@ -1,16 +1,23 @@
 @keyframes slide {
     0% {
-        background-position: 0 10%;
+        background-position: 0 -1700%;
     }
     100% {
-        background-position: 0 100%;
+        background-position: 0 1600%;
     }
 }
 
-#hero article:first-child {
+#hero #textMove {
     background: url('/assets/brand/TextBackgroundIndex.svg');
-    background-size: 100%;
-    background-position: bottom;
+    background-size: contain;
     background-repeat: repeat-y;
-    animation: slide 1s linear infinite;   
+    background-position: center;
+    animation: slide 5s linear infinite;
+}
+
+
+#hero article:nth-child(3) {
+    background: url('/assets/resources/coffeeBackground.webp');
+    background-size: cover;
+    background-position: center;
 }
