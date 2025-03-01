@@ -1,3 +1,4 @@
+import { validatePaquete, validatePaqueteUpdate } from "../Validation/SchemaPaquete.mjs";
 export class ProductController{
     constructor({ProductModels}){
         this.ProductModels = ProductModels;
@@ -85,6 +86,45 @@ export class ProductController{
         try{
             const PaqueteID = await this.ProductModels.getByID(params);
             return res.status(200).json(PaqueteID);
+        }
+        catch(err){
+            console.log(`Ocurrio un error ${err}`);
+            return res.status(500).json({error: err});
+        }
+    }
+
+    // Crear un paquete de cafe
+
+    CreatePaquete = async ( req, res) => {
+        try{
+            const result = validatePaquete(req.body);
+            if(!result.success){
+                return res.status(400).json(result.error);
+            }
+            else{
+                const NewPaquetes = await this.ProductModels.CreatePaquete({paquete: result.data});
+                return res.status(201).json(NewPaquetes);
+            }
+        }
+        catch(err){
+            console.log(`Ocurrio un error ${err}`);
+            return res.status(500).json({error: err});
+        }
+        
+    }
+
+    // Actualizar un paquete de cafe
+    UpdatePaquete = async ( req, res ) => {
+        try{
+            const {id} = req.params;
+            const result = validatePaqueteUpdate(req.body);
+            if(!result.success){
+                return res.status(400).json(result.error);
+            }
+            else{
+                const UpdatePaquete = await this.ProductModels.UpdatePaquete({id, paquete: result.data});
+                return res.status(200).json(UpdatePaquete);
+            }
         }
         catch(err){
             console.log(`Ocurrio un error ${err}`);
