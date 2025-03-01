@@ -2,7 +2,7 @@
 GET http://localhost:8080/paquetes
 
 ### Obtener un paquete de cafe por su precio
-GET http://localhost:8080/paquetes/price/5
+GET http://localhost:8080/paquetes/price/5.00
 
 ### Obtener un paquete de cafe por su nombre
 GET http://localhost:8080/paquetes/name/Cafe Molido
