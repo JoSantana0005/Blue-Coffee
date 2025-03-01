@@ -1,5 +1,6 @@
 import { validatePaquete, validatePaqueteUpdate } from "../Validation/SchemaPaquete.mjs";
 export class PaqueteController{
+    
     constructor({PaquetesModels}){
         this.PaquetesModels = PaquetesModels;
     }
