@@ -16,7 +16,7 @@
 }
 
 
-#hero article:nth-child(3) {
+#hero #backgroundGrain {
     background: url('/assets/resources/coffeeBackground.webp');
     background-size: cover;
     background-position: center;

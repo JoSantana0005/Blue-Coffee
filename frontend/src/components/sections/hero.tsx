@@ -10,7 +10,7 @@ export default function Hero(){
                 <img className="size-28" src="/assets/brand/Apasionados.svg" alt="Apasionados" />
                 <h2 className="text-white font-bold text-3xl uppercase">Apasionados<br></br> por el Cafe</h2>
             </article>
-            <article className="row-span-2 col-start-3 row-start-2 bg-gray-200">3</article>
+            <article id="backgroundGrain" className="row-span-2 col-start-3 row-start-2 bg-gray-200"></article>
             <TopCoffee />
         </section>
     )

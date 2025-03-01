@@ -12,7 +12,7 @@ export default function Navbar() {
     }
 
     return (
-        <nav className="fixed top-0 bg-[#ffffff30] backdrop-blur-md w-full h-16 flex p-8 px-14 items-center justify-between">
+        <nav className="fixed top-0 bg-white backdrop-blur-md w-full h-16 flex p-8 px-14 items-center justify-between">
             <Link to="/"><img src="/assets/brand/BlueCoffee.svg" alt="Logo" /></Link>
             <section className="flex gap-4 *:hover:text-primary *:transition-all">
                 <Link to="/">Cápsulas</Link>

@@ -5,7 +5,25 @@
         "description": "Capsula de cafe molido de 450 gramos",
         "price": 29.00,
         "type": ["molido"],
-        "image": "",
+        "image": "/data/images/paquetes/paquete.webp",
+        "cant_gram": 450
+    },
+    {
+        "id": 1,
+        "name": "Original Party",
+        "description": "Capsula de cafe molido de 450 gramos",
+        "price": 29.00,
+        "type": ["molido"],
+        "image": "/data/images/paquetes/paquete.webp",
+        "cant_gram": 450
+    },
+    {
+        "id": 1,
+        "name": "Original Party",
+        "description": "Capsula de cafe molido de 450 gramos",
+        "price": 29.00,
+        "type": ["molido"],
+        "image": "/data/images/paquetes/paquete.webp",
         "cant_gram": 450
     }
 ]

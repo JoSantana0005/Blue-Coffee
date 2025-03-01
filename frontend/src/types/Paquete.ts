@@ -1,4 +1,4 @@
-interface Coffee {
+interface Paquete {
     id: number,
     name: string,
     price: number,
@@ -8,4 +8,4 @@ interface Coffee {
     cant_gram: number
 }
 
-export default Coffee;
+export default Paquete;
