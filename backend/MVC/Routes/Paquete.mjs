@@ -1,9 +1,22 @@
 import { Router } from "express";
-import { ProductController } from "../Controller/Product.mjs";
-import { ProductModels } from "../Models/Product.mjs";
+import { PaqueteController } from "../Controller/Paquetes.mjs";
+import { PaquetesModels } from "../Models/Paquete.mjs";
 
 const router = Router();
-const productcontroller = new ProductController({ ProductModels: ProductModels});
+export const paquetecontroller = new PaqueteController({PaquetesModels: PaquetesModels});
 export const ProductRouter = router;
 
-ProductRouter.get("/", productcontroller);
+
+///  GET
+ProductRouter.get("/", paquetecontroller.getAll);
+ProductRouter.get("/price/:price", paquetecontroller.getByPrice);
+ProductRouter.get("/name/:name", paquetecontroller.getByName);
+ProductRouter.get("/type/:type", paquetecontroller.getByType);
+ProductRouter.get("/grams/:cant_gram", paquetecontroller.getByGram);
+ProductRouter.get("/:id", paquetecontroller.getByID);
+
+/// POST
+ProductRouter.post("/", paquetecontroller.CreatePaquete);
+
+/// PATCH
+ProductRouter.patch("/:id", paquetecontroller.UpdatePaquete);

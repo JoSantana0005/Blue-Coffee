@@ -1,6 +1,6 @@
 import { ReadJson } from "../Components/utilis.mjs";
-const paquetes = ReadJson("./Paquetes.json");
-export class ProductModels{
+const paquetes = ReadJson("../Paquetes.json");
+export class PaquetesModels{
     // Obtener todos los paquetes de cafe
     static async getAll(){
         return paquetes
@@ -10,7 +10,7 @@ export class ProductModels{
     static async getByPrice({price}){
         if(price){
             return paquetes.filter(paquete =>
-                paquete.price === price
+                paquete.price === parseInt(price)
             )
         }
         else{
@@ -49,7 +49,7 @@ export class ProductModels{
     static async getByType({type}){
         if(type){
             return paquetes.filter(paquete =>
-                paquete.type.includes(type)
+                paquete.type.includes(type.toLowerCase())
             )
         }
         else{
@@ -58,10 +58,10 @@ export class ProductModels{
     }
 
     // Obtener un paquete de cafe por su cantidad de gramo
-    static async getByGram({gram}){
-        if(gram){
+    static async getByGram({cant_gram}){
+        if(cant_gram){
             return paquetes.filter(paquete =>
-                paquete.cant_gram === gram
+                paquete.cant_gram === parseInt(cant_gram)
             ) 
         }
         else{

@@ -1,2 +1,4 @@
 import zod from 'zod';
-export const SchemaCapsula = 
+export const SchemaCapsula = zod.object({
+    
+}) 

@@ -1,7 +1,7 @@
 import { validatePaquete, validatePaqueteUpdate } from "../Validation/SchemaPaquete.mjs";
-export class ProductController{
-    constructor({ProductModels}){
-        this.ProductModels = ProductModels;
+export class PaqueteController{
+    constructor({PaquetesModels}){
+        this.PaquetesModels = PaquetesModels;
     }
 
     // Obtener todos los paquetes de cafe
@@ -9,7 +9,7 @@ export class ProductController{
     getAll = async ( req, res) => {
         
         try{
-            const paquetes = await this.ProductModels.getALL();
+            const paquetes = await this.PaquetesModels.getAll();
             return res.status(200).json(paquetes);
         }
         catch(err){
@@ -24,7 +24,7 @@ export class ProductController{
         
         try{
             const {price} = req.params;
-            const paquetePrice = await this.ProductModels.getByPrice({price});
+            const paquetePrice = await this.PaquetesModels.getByPrice({price});
             return res.status(200).json(paquetePrice);
         }
         catch(err){
@@ -39,7 +39,7 @@ export class ProductController{
         
         try{
             const {name} = req.params;
-            const paqueteName = await this.ProductModels.getByName({name});
+            const paqueteName = await this.PaquetesModels.getByName({name});
             return res.status(200).json(paqueteName);
         }
         catch(err){
@@ -54,7 +54,7 @@ export class ProductController{
         
         try{
             const {type} = req.params;
-            const paqueteType = await this.ProductModels.getByType({type});
+            const paqueteType = await this.PaquetesModels.getByType({type});
             return res.status(200).json(paqueteType);
         }
         catch(err){
@@ -67,9 +67,9 @@ export class ProductController{
 
     getByGram = async ( req, res ) =>{
         
-        const {gram} = req.params;
+        const {cant_gram} = req.params;
         try{
-            const paqueteGram = await this.ProductModels.getByGram({gram});
+            const paqueteGram = await this.PaquetesModels.getByGram({cant_gram});
             return res.status(200).json(paqueteGram);
         }
         catch(err){
@@ -84,7 +84,7 @@ export class ProductController{
         
         const params = req.params;
         try{
-            const PaqueteID = await this.ProductModels.getByID(params);
+            const PaqueteID = await this.PaquetesModels.getByID(params);
             return res.status(200).json(PaqueteID);
         }
         catch(err){
@@ -102,7 +102,7 @@ export class ProductController{
                 return res.status(400).json(result.error);
             }
             else{
-                const NewPaquetes = await this.ProductModels.CreatePaquete({paquete: result.data});
+                const NewPaquetes = await this.PaquetesModels.CreatePaquete({paquete: result.data});
                 return res.status(201).json(NewPaquetes);
             }
         }
@@ -122,7 +122,7 @@ export class ProductController{
                 return res.status(400).json(result.error);
             }
             else{
-                const UpdatePaquete = await this.ProductModels.UpdatePaquete({id, paquete: result.data});
+                const UpdatePaquete = await this.PaquetesModels.UpdatePaquete({id, paquete: result.data});
                 return res.status(200).json(UpdatePaquete);
             }
         }

@@ -14,6 +14,7 @@
         "name": "Cafe Grano",
         "description": "Paquete de cafe en grano de 250 gramos",
         "price": 5.00,
+        "cant_gram": 250,
         "type": ["grano"],
         "imagen": ""
     }
