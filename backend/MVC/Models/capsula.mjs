@@ -38,6 +38,7 @@ export class CapsulasModels{
     }
 
     // Obtener una capsula de cafe por su cantidad de gramos
+    
     static async getByGram({cant_gram}){
         if(cant_gram){
             return capsulas.filter(capsula =>
@@ -51,6 +52,7 @@ export class CapsulasModels{
     }
 
     // Obtener una capsula de cafe por su tipo
+    
     static async getByType({type_capsula}){
         if(type_capsula){
             return capsulas.filter(capsula =>
@@ -77,5 +79,45 @@ export class CapsulasModels{
         }
     }
 
-    // 
+    // Crear una capsula de cafe
+   
+    static async CreateCapsula({capsula}){
+        if(capsula){
+            const NewCapsula = {
+                id: capsulas.length + 1,
+                ...capsula
+            }
+            capsulas.push(NewCapsula);
+            console.log("Se ha creado una capsula de cafe exitosamente");
+            return capsulas;
+        }
+        else{
+            console.log("No se ha podido crear la capsula de cafe");
+            return null;
+        }
+    }
+
+    // Actualizar una capsula de cafe segun su id
+    
+    static async UpdateCapsula({id, capsula}){
+        if(id && capsula){
+            const index = capsulas.findIndex(capsula =>
+                capsula.id === parseInt(id)
+            )
+            if(index !== -1){
+                const UpdateCapsula = {
+                    ...capsulas[index],
+                    ...capsula
+                }
+                capsulas[index] = UpdateCapsula;
+                console.log("Se ha actualizado la capsula de cafe exitosamente");
+                return capsulas;
+            }
+            
+            else{
+                console.log("No se ha encontrado ninguna capsula de cafe con ese id");
+                return null;
+            }
+        }
+    }
 }
