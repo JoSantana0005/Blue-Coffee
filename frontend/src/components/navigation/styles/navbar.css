@@ -1,0 +1,7 @@
+#accountSection a svg:hover {
+    stroke: #fff;
+}
+
+#accountSection span svg:hover {
+    stroke: #fff;
+}
