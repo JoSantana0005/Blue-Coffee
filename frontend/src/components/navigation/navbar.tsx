@@ -49,11 +49,19 @@ export default function Navbar() {
                     <h2 className="bg-white font-bold">Carrito</h2>
                     <X onClick={handleCart} className="cursor-pointer" />
                 </article>
-                <article className="flex flex-col gap-4">
-                    {
-                        
-                    }
+                <article className="flex flex-col gap-4 overflow-y-auto">
+                    {cart.map((item: any, index: number) => (
+                        <section key={index} className="flex justify-between h-30 transition-all hover:bg-primary cursor-pointer rounded-xl p-4 gap-2 items-center">
+                            <img src={item.image || item.imagen_capsula} alt={item.name || item.name_capsula} className="w-1/4" />
+                            <span className="text-sm w-1/2 font-bold">{item.name_capsula || item.name}</span>
+                            <span className="flex w-20">$ {item.price || item.price_capsula}</span>
+                        </section>
+                    ))}
                 </article>
+                <section className="flex justify-between items-center">
+                        <span>Total</span>
+                        <span>$ {total}</span>
+                </section>
             </section>
         </nav>
     );

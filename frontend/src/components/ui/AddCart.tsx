@@ -9,7 +9,7 @@ export default function AddCart({ item }: { item: any }) {
 
   function addCart(){
     setCart([...cart, item]);
-    setTotal(total + item.price);
+    setTotal(total + (item.price || item.price_capsula));
     console.log(cart);
   }
 
