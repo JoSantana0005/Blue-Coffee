@@ -4,6 +4,8 @@ import Hero from '../components/sections/hero'
 import Paquetes from '../components/sections/paquetes'
 import Capsulas from '../components/sections/capsulas'
 import Grano from '../components/sections/grano'
+import Molido from '../components/sections/molido'
+import Packs from '../components/sections/packs'
 
 export default function Home() {
   return (
@@ -12,6 +14,8 @@ export default function Home() {
       <Paquetes />
       <Capsulas />
       <Grano />
+      <Molido />
+      <Packs />
     </Layout>
   )
 }

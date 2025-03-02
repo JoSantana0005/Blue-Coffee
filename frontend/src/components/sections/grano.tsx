@@ -19,7 +19,7 @@ export default function Grano(){
 
     return (
         <section id="grano" className="flex flex-col gap-12 justify-center items-center h-[150vh]">
-            <h3 className="text-secondary font-black text-4xl">Cafe en Grano</h3>
+            <h3 className="text-secondary font-black text-4xl">Café en Grano</h3>
             <div className="grid grid-cols-4 grid-rows-2 gap-14 w-full p-14">
                 {loading ? <p>Loading...</p> : 
                 
