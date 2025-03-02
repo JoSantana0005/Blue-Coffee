@@ -1,10 +1,11 @@
 import React, {useContext} from "react";
 import { Plus } from "lucide-react";
 import { ShopContext } from "../../context/CartContext";
+import type ShopContextType from "../../types/ShopContext";
 
-export default function AddCart(item) {
+export default function AddCart({ item }: { item: any }) {
 
-  const [cart, setCart, total, setTotal] = useContext(ShopContext);
+  const { cart, setCart, total, setTotal }: ShopContextType = useContext(ShopContext);
 
   function addCart(){
     setCart([...cart, item]);

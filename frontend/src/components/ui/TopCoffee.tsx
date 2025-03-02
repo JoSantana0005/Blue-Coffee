@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from "react"
 import type Paquete from "../../types/Paquete"
-import {Plus} from "lucide-react"
+import AddCart from "./AddCart"
+
 
 export default function TopCoffee(){
 
@@ -30,7 +31,7 @@ export default function TopCoffee(){
                             <p className="font-bold uppercase">{item.name}</p>
                             <p>{item.description}</p>
                             <p className="font-bold">{item.price}$ C/U</p>
-                            <button className="bg-primary p-2 rounded-full cursor-pointer active:scale-95 transition-scale"><Plus color="white" /></button>
+                            <AddCart item={item} />
                         </article>
                     )
                 })}
