@@ -5,15 +5,15 @@ export default function Footer() {
     return (
         <footer className="h-[30vh] relative w-full flex justify-center gap-16 text-sm items-center bg-gray-100 text-black">
             <article className="flex flex-col h-1/2 *:hover:underline">
-                <a href="">Politicas de Envios</a>
-                <a href="">Devoluciones</a>
-                <a href="">Aviso Legal</a>
-                <a href="">Condiciones generales</a>
+                <a href="/politics">Politicas de Envios</a>
+                <a href="/returns">Devoluciones</a>
+                <a href="/legal">Aviso Legal</a>
+                <a href="/general">Condiciones generales</a>
             </article>
             <article className="flex flex-col h-1/2 *:hover:underline">
-                <a href="">Politicas de Cookies</a>
-                <a href="">Terminos de Servicios</a>
-                <a href="">Politicas de Privacidad</a>
+                <a href="/cookies">Politicas de Cookies</a>
+                <a href="/servicios">Terminos de Servicios</a>
+                <a href="/privacity">Politicas de Privacidad</a>
             </article>
             <article className="flex flex-col h-1/2 gap-1">
                 <h2 className="font-bold uppercase text-xl">Contactanos</h2>
