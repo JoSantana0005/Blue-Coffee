@@ -18,9 +18,9 @@ export default function Capsulas(){
 
 
     return (
-        <section className="h-[75vh] w-full flex flex-col p-10 justify-center">
+        <section id="capsulas" className="h-[75vh] w-full flex flex-col p-10 gap-8 justify-center">
             <h2 className="text-secondary font-black text-4xl">Capsulas</h2>
-            <div className="flex w-full justify-between items-center">
+            <div className="flex w-full justify-between items-center gap-4">
                 {capsulas.map((capsula) => (
                     <CapsulaCard key={capsula.id} {...capsula} />
                 ))}

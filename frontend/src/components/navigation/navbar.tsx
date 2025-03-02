@@ -15,11 +15,10 @@ export default function Navbar() {
         <nav className="fixed z-50 top-0 bg-white backdrop-blur-md w-full h-16 flex p-8 px-14 items-center justify-between">
             <Link to="/"><img src="/assets/brand/BlueCoffee.svg" alt="Logo" /></Link>
             <section className="flex gap-4 *:hover:text-primary *:transition-all">
-                <Link to="/">Cápsulas</Link>
-                <Link to="/about">Café en Grano</Link>
-                <Link to="/menu">Café Molido</Link>
-                <Link to="/contact">Packs</Link>
-                <Link to="/contact">Accesorios</Link>
+                <a href="/#capsulas">Cápsulas</a>
+                <a href="/#grano">Café en Grano</a>
+                <a href="/#molido">Café Molido</a>
+                <a href="/#packs">Packs</a>
             </section>
             <section onClick={handleCart} id="accountSection" className="flex items-center gap-6">
                 <Link to="/login"><User size={40} className="hover:bg-primary p-2 hover:rounded-full transition-all" /></Link>
