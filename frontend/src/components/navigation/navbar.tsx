@@ -13,7 +13,7 @@ export default function Navbar() {
 
     return (
         <nav className="fixed z-50 top-0 bg-white backdrop-blur-md w-full h-16 flex p-8 px-14 items-center justify-between">
-            <Link to="/"><img src="/assets/brand/BlueCoffee.svg" alt="Logo" /></Link>
+            <a href="/"><img src="/assets/brand/BlueCoffee.svg" alt="Logo" /></a>
             <section className="flex gap-4 *:hover:text-primary *:transition-all">
                 <a href="/#capsulas">Cápsulas</a>
                 <a href="/#grano">Café en Grano</a>

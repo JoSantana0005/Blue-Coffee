@@ -11,7 +11,7 @@ export default function TopCoffee(){
         const fetchData = async () => {
             const response = await fetch("/data/coffee.json")
             const data = await response.json()
-            setCoffee(data)
+            setCoffee(data.slice(0,3))
             setLoading(false)
         }
         fetchData()
