@@ -44,13 +44,17 @@ export default function Navbar() {
                 <Link to="/login"><User size={40} className="hover:bg-primary p-2 hover:rounded-full transition-all" /></Link>
                 <span><ShoppingBasket size={40} className="hover:bg-primary active:scale-95 p-2 hover:rounded-full transition-all cursor-pointer" /></span>
             </section>
-            <section id="cart" ref={cartRef} className="fixed gap-4 flex flex-col shadow-2xl p-8 transition-all right-[-100%] top-0 w-1/4 h-screen bg-white">
+            <section id="cart" ref={cartRef} className="fixed gap-4 flex flex-col justify-between shadow-2xl p-8 transition-all right-[-100%] top-0 w-1/4 h-screen bg-white">
                 <article className="flex w-full justify-between items-center">
                     <h2 className="bg-white font-bold">Carrito</h2>
                     <X onClick={handleCart} className="cursor-pointer" />
                 </article>
-                <article className="flex flex-col gap-4 overflow-y-auto">
-                    {cart.map((item: any, index: number) => (
+                <article className="flex flex-col h-full gap-4 overflow-y-auto">
+                    {
+                    cart ? cart.length === 0 ? <span className="text-center opacity-50 text-2xl">Carrito Vacío</span> : null : null
+                    }
+                    {
+                    cart.map((item: any, index: number) => (
                         <section key={index} className="flex justify-between h-30 transition-all hover:bg-primary cursor-pointer rounded-xl p-4 gap-2 items-center">
                             <img src={item.image || item.imagen_capsula} alt={item.name || item.name_capsula} className="w-1/4" />
                             <span className="text-sm w-1/2 font-bold">{item.name_capsula || item.name}</span>
@@ -58,7 +62,7 @@ export default function Navbar() {
                         </section>
                     ))}
                 </article>
-                <section className="flex justify-between items-center">
+                <section className="flex font-bold justify-between items-center">
                         <span>Total</span>
                         <span>$ {total}</span>
                 </section>
