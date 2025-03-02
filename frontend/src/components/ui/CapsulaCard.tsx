@@ -1,6 +1,7 @@
 import React from "react";
 import type Capsula from "../../types/Capsula"
 import {Plus} from "lucide-react"
+import AddCart from "./AddCart";
 
 export default function CapsulaCard({...item}: Capsula){
     return (
@@ -9,7 +10,7 @@ export default function CapsulaCard({...item}: Capsula){
             <div className="flex flex-col w-full justify-between items-center h-1/3">
                 <h3 className="text-secondary font-black text-sm text-center">{item.name_capsula}</h3>
                 <p className="text-secondary font-light text-xs text-center">${item.price_capsula}</p>
-                <button className="bg-primary size-10 p-2 rounded-full cursor-pointer active:scale-95 transition-scale"><Plus color="white" /></button>
+                <AddCart item={item} />
             </div>
         </article>
     )
