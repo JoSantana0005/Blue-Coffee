@@ -18,8 +18,8 @@ export default function Packs(){
 
 
     return (
-        <div className="h-[75vh] p-14">
-            <section id="capsulas" className="h-full rounded-xl border w-full flex flex-col p-10 gap-8 justify-center">
+        <div id="packs" className="h-[80vh] p-14">
+            <section className="h-full rounded-xl border w-full flex flex-col p-10 gap-8 justify-center">
                 <h2 className="text-secondary font-black text-4xl">Packs</h2>
                 <div className="flex w-full justify-between items-center gap-4">
                     {capsulas.map((capsula) => (
