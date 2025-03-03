@@ -1,7 +1,7 @@
 import dbLocal from "db-local";
 import cryton from "node:crypto";
 import bcrypt from "bcrypt";
-const { Schema } = new dbLocal({path: './MVC/Users.json'});
+const { Schema } = new dbLocal({path: './MVC/users.json'});
 
 const Users = Schema('Users', {
     _id: { type: 'number',  primaryKey: true },
@@ -14,10 +14,11 @@ const Users = Schema('Users', {
 export class UserRepository {
     static async create({user}){
         if(user){
-            const FindUsers = Users.findOne({user: user.first_name});
+            const name = user.first_name;
+            const FindUsers = await Users.findOne({first_name: name});
             if(FindUsers){
                 console.log("El usuario ya existe");
-                return null;
+                return [{error: "El usuario ya existe"}];
             }
             else{
                 const id = cryton.randomUUID();
@@ -29,7 +30,6 @@ export class UserRepository {
                     email: user.email,
                     password: hash
                 }).save();
-                
                 return id;
             }
         }
