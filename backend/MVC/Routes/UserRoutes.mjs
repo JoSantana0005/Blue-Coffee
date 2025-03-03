@@ -9,3 +9,4 @@ export const RouteUser = route;
 
 // POST / register
 RouteUser.post('/Register', userController.register);
+RouteUser.post('/Login', userController.login);

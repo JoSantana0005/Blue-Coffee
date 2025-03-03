@@ -27,4 +27,7 @@ export class UserController {
             })
         }
     }
+    login = async ( req, res) =>{
+        
+    }
 }
