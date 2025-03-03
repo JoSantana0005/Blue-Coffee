@@ -1,6 +1,6 @@
 import dbLocal from "db-local";
 import cryton from "node:crypto";
-import bcrypt from "bcrypt";
+import bcrypt from "bcryptjs";
 const { Schema } = new dbLocal({path: './MVC/users.json'});
 
 const Users = Schema('Users', {
