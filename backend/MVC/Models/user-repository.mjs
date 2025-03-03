@@ -39,7 +39,20 @@ export class UserRepository {
         }
 
     }
-    static async Login({ email, password}){
-
+    static async Login({ user }){
+        if(user){
+            const AccessUser = await Users.findOne({email: user.email});
+            if(!AccessUser){
+                return [{error: "El usuario no existe"}];
+            }
+            const password = bcrypt.compareSync(user.password, AccessUser.password);
+            if(!password){
+                return [{error: "La contraseña es incorrecta"}];
+            }
+            return AccessUser;
+                
+        }else{
+            return [{error: "No se ha podido acceder al usuario"}];
+        }
     }
 }

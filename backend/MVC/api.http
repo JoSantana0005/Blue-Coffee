@@ -45,3 +45,12 @@ Content-Type: application/json
     "email": "JuanPerez@gmail.com",
     "password": "12345678"
 }
+
+### Iniciar Sesión
+POST http://localhost:8080/Users/Login
+Content-Type: application/json
+
+{
+    "email": "jose@GMAIL.COM",
+    "password": "45132127"
+}
