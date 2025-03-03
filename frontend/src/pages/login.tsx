@@ -16,7 +16,7 @@ export default function Login() {
         }
 
         //MODIFICAR RUTA Y RESPONSE
-        axios.post('http://localhost:3000/api/login', {
+        axios.post('http://localhost:8080/Users/Login', {
             email,
             password
         }).then((response) => {
@@ -26,7 +26,7 @@ export default function Login() {
             }
         }
         ).catch((error) => {
-            console.log(error);
+            alert('Credenciales Incorrectas');
         });
 
     }

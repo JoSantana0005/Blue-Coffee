@@ -18,8 +18,7 @@ export default function Register() {
             return;
         }
 
-        //MODIFICAR RUTA Y RESPONSE
-        axios.post('http://localhost:3000/api/register', {
+        axios.post('http://localhost:8080/Users/Register', {
             email,
             password,
             first_name,
@@ -31,7 +30,7 @@ export default function Register() {
             }
         }
         ).catch((error) => {
-            console.log(error);
+            alert('Error al registrar');
         });
     }
 
