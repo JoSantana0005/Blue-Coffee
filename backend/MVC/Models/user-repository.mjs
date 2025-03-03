@@ -49,7 +49,8 @@ export class UserRepository {
             if(!password){
                 return [{error: "La contraseña es incorrecta"}];
             }
-            return AccessUser;
+            const {password: _ , ...rest} = AccessUser
+            return rest;
                 
         }else{
             return [{error: "No se ha podido acceder al usuario"}];
