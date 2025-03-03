@@ -2,7 +2,7 @@ import express, {json} from 'express';
 import cors from 'cors';
 import { ProductRouter } from './MVC/Routes/Paquete.mjs';
 import { CapsulasRouter } from './MVC/Routes/capsulas.mjs';
-
+import { RouteUser } from './MVC/Routes/UserRoutes.mjs';
 
 const PORT = process.env.PORT || 8080;
 
@@ -12,8 +12,7 @@ app.use(cors());
 
 app.use('/paquetes', ProductRouter);
 app.use('/capsulas', CapsulasRouter);
-app.use('/Login')
-app.use('/Register')
+app.use('/Users', RouteUser);
 
 app.listen(PORT, () => {
     console.log(`Servidor escuchando en el http://localhost:${PORT}`);
