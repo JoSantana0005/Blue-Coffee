@@ -12,6 +12,8 @@ app.use(cors());
 
 app.use('/paquetes', ProductRouter);
 app.use('/capsulas', CapsulasRouter);
+app.use('/Login')
+app.use('/Register')
 
 app.listen(PORT, () => {
     console.log(`Servidor escuchando en el http://localhost:${PORT}`);
