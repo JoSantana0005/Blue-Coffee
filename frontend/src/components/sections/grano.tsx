@@ -9,7 +9,7 @@ export default function Grano(){
 
     useEffect(() => {
         const fetchData = async () => {
-            const response = await fetch("/data/coffee.json")
+            const response = await fetch("http://localhost:8080/paquetes/type/Grano")
             const data = await response.json()
             setCoffee(data.slice(0,8))
             setLoading(false)

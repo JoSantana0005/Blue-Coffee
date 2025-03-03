@@ -9,7 +9,7 @@ export default function Molido(){
 
     useEffect(() => {
         const fetchData = async () => {
-            const response = await fetch("/data/coffee.json");
+            const response = await fetch("http://localhost:8080/paquetes/type/Molido");
             const data = await response.json();
             setPaquetes(data.slice(0, 3));
         };
