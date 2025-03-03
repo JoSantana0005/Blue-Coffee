@@ -5,6 +5,7 @@ import NotFound from './pages/404'
 import Login from './pages/login'
 import Register from './pages/register'
 import CartContextProvider from './context/CartContext'
+import Payment from './pages/payment'
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path='/login' element={<Login />} />
           <Route path='/register' element={<Register />} />
+          <Route path='/payment' element={<Payment />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

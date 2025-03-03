@@ -31,6 +31,14 @@ export default function Navbar() {
         }
       }, [location]);
 
+    function redirectPayment(){
+        if(cart.length === 0) {
+            alert('No hay productos en el carrito');
+            return;
+        }
+        window.location.href = '/payment';
+    }
+
     return (
         <nav className="fixed z-50 top-0 bg-white backdrop-blur-md w-full h-16 flex p-8 px-14 items-center justify-between">
             <Link to="/#hero"><img src="/assets/brand/BlueCoffee.svg" alt="Logo" /></Link>
@@ -62,10 +70,13 @@ export default function Navbar() {
                         </section>
                     ))}
                 </article>
-                <section className="flex font-bold justify-between items-center">
-                        <span>Total</span>
-                        <span>$ {total}</span>
-                </section>
+                <div className="flex flex-col gap-4">
+                    <section className="flex font-bold justify-between items-center">
+                            <span>Total</span>
+                            <span>$ {total}</span>
+                    </section>
+                    <button onClick={redirectPayment} className="w-full cursor-pointer h-12 rounded-md bg-primary text-white font-bold">Pagar</button>
+                </div>
             </section>
         </nav>
     );

@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from "../layout/layout";
-import { useRef } from "react";
+import { useState, useEffect } from "react";
+import axios from "axios";
 
 export default function Login() {
 
@@ -9,7 +10,32 @@ export default function Login() {
         const email = (document.getElementById('email') as HTMLInputElement).value;
         const password = (document.getElementById('password') as HTMLInputElement).value;
 
+        if(!email || !password) {
+            alert('Todos los campos son requeridos');
+            return;
+        }
+
+        //MODIFICAR RUTA Y RESPONSE
+        axios.post('http://localhost:3000/api/login', {
+            email,
+            password
+        }).then((response) => {
+            if(response.status === 200) {
+                window.localStorage.setItem('token', response.data.token);
+                window.location.href = '/';
+            }
+        }
+        ).catch((error) => {
+            console.log(error);
+        });
+
     }
+
+    useEffect(() => {
+        if(window.localStorage.getItem('token')) {
+            window.location.href = '/';
+        }
+    }, []);
 
     return (
         <Layout>
