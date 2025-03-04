@@ -1,2 +1,7 @@
 # Blue-Coffee
-Ercomerce de ventas de cafes
+## Ecommerce Ventas de Cafe
+
+Para correr todos los servidores:
+```bash
+    docker-compose up
+```
