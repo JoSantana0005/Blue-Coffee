@@ -1,0 +1,146 @@
+[
+    {
+        "id": 1,
+        "name_capsula": "Original Party",
+        "description_capsula": "Cápsula de café molido de 450 gramos",
+        "price_capsula": 29.00,
+        "cant_gram": 450,
+        "type_capsula": ["molido"],
+        "imagen_capsula": "/data/images/capsulas/capsula.webp"
+    },
+    {
+        "id": 2,
+        "name_capsula": "Original Ron",
+        "description_capsula": "Cápsula de café ron de 470 gramos",
+        "price_capsula": 35.00,
+        "cant_gram": 470,
+        "type_capsula": ["ron"],
+        "imagen_capsula": "/data/images/capsulas/capsula.webp"
+    },
+    {
+        "id": 3,
+        "name_capsula": "Intenso Cápsula",
+        "description_capsula": "Cápsula de café espresso de 300 gramos",
+        "price_capsula": 32.00,
+        "cant_gram": 300,
+        "type_capsula": ["molido"],
+        "imagen_capsula": "/data/images/capsulas/capsula.webp"
+    },
+    {
+        "id": 4,
+        "name_capsula": "Café de Otoño",
+        "description_capsula": "Cápsula de café con especias de 500 gramos",
+        "price_capsula": 28.00,
+        "cant_gram": 500,
+        "type_capsula": ["grano"],
+        "imagen_capsula": "/data/images/capsulas/capsula.webp"
+    },
+    {
+        "id": 5,
+        "name_capsula": "Original Santana",
+        "description_capsula": "Cápsula de café descafeinado de 450 gramos",
+        "price_capsula": 30.00,
+        "cant_gram": 450,
+        "type_capsula": ["grano"],
+        "imagen_capsula": "/data/images/capsulas/capsula.webp"
+    },
+    {
+        "id": 6,
+        "name_capsula": "Original Tropical",
+        "description_capsula": "Cápsula de café con sabor a frutas tropicales de 400 gramos",
+        "price_capsula": 33.00,
+        "cant_gram": 400,
+        "type_capsula": ["molido"],
+        "imagen_capsula": "/data/images/capsulas/capsula.webp"
+    },
+    {
+        "id": 7,
+        "name_capsula": "Café de la Selva",
+        "description_capsula": "Cápsula de café con notas de cacao de 450 gramos",
+        "price_capsula": 31.00,
+        "cant_gram": 450,
+        "type_capsula": ["grano"],
+        "imagen_capsula": "/data/images/capsulas/capsula.webp"
+    },
+    {
+        "id": 8,
+        "name_capsula": "Cápsula de Caramelo",
+        "description_capsula": "Cápsula de café con sabor a caramelo de 400 gramos",
+        "price_capsula": 34.00,
+        "cant_gram": 400,
+        "type_capsula": ["molido"],
+        "imagen_capsula": "/data/images/capsulas/capsula.webp"
+    },
+    {
+        "id": 9,
+        "name_capsula": "Café de la Mañana",
+        "description_capsula": "Cápsula de café suave de 500 gramos",
+        "price_capsula": 27.00,
+        "cant_gram": 500,
+        "type_capsula": ["molido"],
+        "imagen_capsula": "/data/images/capsulas/capsula.webp"
+    },
+    {
+        "id": 10,
+        "name_capsula": "Café de la Tarde",
+        "description_capsula": "Cápsula de café con un toque de vainilla de 450 gramos",
+        "price_capsula": 29.50,
+        "cant_gram": 450,
+        "type_capsula": ["molido"],
+        "imagen_capsula": "/data/images/capsulas/capsula.webp"
+    },
+    {
+        "id": 11,
+        "name_capsula": "Café de la Noche",
+        "description_capsula": "Cápsula de café oscuro de 400 gramos",
+        "price_capsula": 36.00,
+        "cant_gram": 400,
+        "type_capsula": ["grano"],
+        "imagen_capsula": "/data/images/capsulas/capsula.webp"
+    },
+    {
+        "id": 12,
+        "name_capsula": "Cápsula de Frutos Rojos",
+        "description_capsula": "Cápsula de café con un toque afrutado de 450 gramos",
+        "price_capsula": 32.50,
+        "cant_gram": 450,
+        "type_capsula": ["molido"],
+        "imagen_capsula": "/data/images/capsulas/capsula.webp"
+    },
+    {
+        "id": 13,
+        "name_capsula": "Café de la Tradición",
+        "description_capsula": "Cápsula de café clásico de 500 gramos",
+        "price_capsula": 28.50,
+        "cant_gram": 500,
+        "type_capsula": ["grano"],
+        "imagen_capsula": "/data/images/capsulas/capsula.webp"
+    },
+    {
+        "id": 14,
+        "name_capsula": "Café del Jardín",
+        "description_capsula": "Cápsula de café con notas florales de 400 gramos",
+        "price_capsula": 30.00,
+        "cant_gram": 400,
+        "type_capsula": ["molido"],
+        "imagen_capsula": "/data/images/capsulas/capsula.webp"
+    },
+    {
+        "id": 15,
+        "name_capsula": "Cápsula de Chocolate",
+        "description_capsula": "Cápsula de café con sabor a chocolate de 450 gramos",
+        "price_capsula": 33.00,
+        "cant_gram": 450,
+        "type_capsula": ["grano"],
+        "imagen_capsula": "/data/images/capsulas/capsula.webp"
+    },
+    {
+        "id": 16,
+        "name_capsula": "Café de la Inspiración",
+        "description_capsula": "Cápsula de café con un toque de especias de 500 gramos",
+        "price_capsula": 34.50,
+        "cant_gram": 500,
+        "type_capsula": ["molido"],
+        "imagen_capsula": "/data/images/capsulas/capsula.webp"
+    }
+]

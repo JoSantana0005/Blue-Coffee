@@ -1,0 +1,110 @@
+[
+    {
+        "id": 1,
+        "name": "Café Molido",
+        "description": "Paquete de café molido de 250 gramos",
+        "price": 5.00,
+        "cant_gram": 250,
+        "type": ["molido"],
+        "imagen": "/data/images/paquetes/paquete.webp"
+    },
+    {
+        "id": 2,
+        "name": "Café Grano",
+        "description": "Paquete de café en grano de 250 gramos",
+        "price": 5.00,
+        "cant_gram": 250,
+        "type": ["grano"],
+        "imagen": "/data/images/paquetes/paquete.webp"
+    },
+    {
+        "id": 3,
+        "name": "Café Descafeinado",
+        "description": "Paquete de café descafeinado de 250 gramos",
+        "price": 6.00,
+        "cant_gram": 250,
+        "type": ["molido"],
+        "imagen":  "/data/images/paquetes/paquete.webp"
+    },
+    {
+        "id": 4,
+        "name": "Café Espresso",
+        "description": "Paquete de café espresso de 250 gramos",
+        "price": 7.00,
+        "cant_gram": 250,
+        "type": ["grano"],
+        "imagen":  "/data/images/paquetes/paquete.webp"
+    },
+    {
+        "id": 5,
+        "name": "Café Orgánico",
+        "description": "Paquete de café orgánico de 250 gramos",
+        "price": 8.00,
+        "cant_gram": 250,
+        "type": ["molido"],
+        "imagen":  "/data/images/paquetes/paquete.webp"
+    },
+    {
+        "id": 6,
+        "name": "Café de Otoño",
+        "description": "Paquete de café con especias de 250 gramos",
+        "price": 6.50,
+        "cant_gram": 250,
+        "type": ["grano"],
+        "imagen":  "/data/images/paquetes/paquete.webp"
+    },
+    {
+        "id": 7,
+        "name": "Café Tropical",
+        "description": "Paquete de café con sabor a frutas tropicales de 250 gramos",
+        "price": 7.50,
+        "cant_gram": 250,
+        "type": ["molido"],
+        "imagen":  "/data/images/paquetes/paquete.webp"
+    },
+    {
+        "id": 8,
+        "name": "Café de Chocolate",
+        "description": "Paquete de café con sabor a chocolate de 250 gramos",
+        "price": 7.00,
+        "cant_gram": 250,
+        "type": ["grano"],
+        "imagen":  "/data/images/paquetes/paquete.webp"
+    },
+    {
+        "id": 9,
+        "name": "Café de la Selva",
+        "description": "Paquete de café con notas de cacao de 250 gramos",
+        "price": 8.50,
+        "cant_gram": 250,
+        "type": ["grano"],
+        "imagen":  "/data/images/paquetes/paquete.webp"
+    },
+    {
+        "id": 10,
+        "name": "Café de la Mañana",
+        "description": "Paquete de café suave de 250 gramos",
+        "price": 5.50,
+        "cant_gram": 250,
+        "type": ["molido"],
+        "imagen":  "/data/images/paquetes/paquete.webp"
+    },
+    {
+        "id": 11,
+        "name": "Café de la Tarde",
+        "description": "Paquete de café con un toque de vainilla de 250 gramos",
+        "price": 6.00,
+        "cant_gram": 250,
+        "type": ["grano"],
+        "imagen":  "/data/images/paquetes/paquete.webp"
+    },
+    {
+        "id": 12,
+        "name": "Café de la Noche",
+        "description": "Paquete de café oscuro de 250 gramos",
+        "price": 7.00,
+        "cant_gram": 250,
+        "type": ["molido"],
+        "imagen": "/data/images/paquetes/paquete.webp"
+    }
+]
