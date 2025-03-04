@@ -2,7 +2,7 @@ interface Paquete {
     id: number,
     name: string,
     price: number,
-    image: string,
+    imagen: string,
     description: string,
     type: string[],
     cant_gram: number

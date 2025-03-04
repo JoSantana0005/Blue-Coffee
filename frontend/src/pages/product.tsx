@@ -29,23 +29,23 @@ export default function Product() {
         <Layout>
             <section className="p-10 flex flex-col h-[120vh]">
                 <section className="flex justify-between h-2/3">
-                    <article className="flex flex-col">
+                    <article className="flex flex-col w-1/2 items-start justify-center p-8 gap-4">
                         {
                             url === 'paquetes' ? (
-                                <p>Granos de Cafe</p>
+                                <p className="p-4 bg-[#009DFF50]">Granos de Cafe</p>
                             ) : (
-                                <p>Capsulas de Cafe</p>
+                                <p className="px-4 py-2 bg-[#009DFF50] rounded-full">Capsulas de Cafe</p>
                             )
                         }
-                        <h2>{product ? ('name' in product ? product.name : product.name_capsula) : 'Loading...'} de {product ? ('cant_gram' in product ? product.cant_gram : "") : 'Loading...'} gr</h2>
-                        <p>$ {product ? ('price' in product ? product.price : product.price_capsula) : 'Loading...'}</p>
-                        <AddCart item={product} />
-                        <p>Descripcion</p>
+                        <h2 className="text-3xl font-bold">{product ? ('name' in product ? product.name : product.name_capsula) : 'Loading...'} de {product ? ('cant_gram' in product ? product.cant_gram : "") : 'Loading...'} gr</h2>
+                        <p className="font-bold text-2xl">$ {product ? ('price' in product ? product.price : product.price_capsula) : 'Loading...'}</p>
+                        <span className="flex items-center justify-center gap-4">Agregar al Carrito<AddCart item={product} /></span>
+                        <p className="font-bold">Descripcion</p>
                         <p>{product ? ('description' in product ? product.description : product.description_capsula) : 'Loading...'}</p>
                     </article>
-                    <article className="w-1/2 h-full">
-                        <div>
-                            <img className="h-full w-full bg-red-300" src={product ? ('image' in product ? product.image : product.imagen_capsula) : 'Loading...'} alt="product" />
+                    <article className="h-full w-1/2 flex justify-center items-center">
+                        <div className="border rounded-xl border-gray-400 p-10 w-2/3 aspect-square flex justify-center items-center">
+                            <img className="h-full w-fit" src={product ? ('image' in product ? product.image : product.imagen_capsula) : 'Loading...'} alt="product" />
                         </div>
                     </article>
                 </section>

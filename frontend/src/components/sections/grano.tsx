@@ -28,7 +28,7 @@ export default function Grano(){
                 coffee.map((item, index) => {
                     return (
                         <article key={index} className="flex flex-col h-full aspect-square gap-4 items-center justify-between">
-                            <img onClick={()=>navigate("/product/paquetes/"+item.id)} className="w-10 cursor-pointer" src={item.image} alt={item.name} />
+                            <img onClick={()=>navigate("/product/paquetes/"+item.id)} className="w-10 cursor-pointer" src={item.imagen} alt={item.name} />
                             <p className="font-bold uppercase">{item.name}</p>
                             <p className="text-xs text-center w-1/2">{item.description}</p>
                             <p className="font-bold">{item.price}$ C/U</p>
