@@ -6,7 +6,7 @@
         "price": 5.00,
         "cant_gram": 250,
         "type": ["molido"],
-        "imagen": "/data/images/paquetes/paquete.png"
+        "imagen": "/data/images/paquetes/paquete.webp"
     },
     {
         "id": 2,
@@ -15,7 +15,7 @@
         "price": 5.00,
         "cant_gram": 250,
         "type": ["grano"],
-        "imagen": "/data/images/paquetes/paquete.png"
+        "imagen": "/data/images/paquetes/paquete.webp"
     },
     {
         "id": 3,
@@ -24,7 +24,7 @@
         "price": 6.00,
         "cant_gram": 250,
         "type": ["molido"],
-        "imagen":  "/data/images/paquetes/paquete.png"
+        "imagen":  "/data/images/paquetes/paquete.webp"
     },
     {
         "id": 4,
@@ -33,7 +33,7 @@
         "price": 7.00,
         "cant_gram": 250,
         "type": ["grano"],
-        "imagen":  "/data/images/paquetes/paquete.png"
+        "imagen":  "/data/images/paquetes/paquete.webp"
     },
     {
         "id": 5,
@@ -42,7 +42,7 @@
         "price": 8.00,
         "cant_gram": 250,
         "type": ["molido"],
-        "imagen":  "/data/images/paquetes/paquete.png"
+        "imagen":  "/data/images/paquetes/paquete.webp"
     },
     {
         "id": 6,
@@ -51,7 +51,7 @@
         "price": 6.50,
         "cant_gram": 250,
         "type": ["grano"],
-        "imagen":  "/data/images/paquetes/paquete.png"
+        "imagen":  "/data/images/paquetes/paquete.webp"
     },
     {
         "id": 7,
@@ -60,7 +60,7 @@
         "price": 7.50,
         "cant_gram": 250,
         "type": ["molido"],
-        "imagen":  "/data/images/paquetes/paquete.png"
+        "imagen":  "/data/images/paquetes/paquete.webp"
     },
     {
         "id": 8,
@@ -69,7 +69,7 @@
         "price": 7.00,
         "cant_gram": 250,
         "type": ["grano"],
-        "imagen":  "/data/images/paquetes/paquete.png"
+        "imagen":  "/data/images/paquetes/paquete.webp"
     },
     {
         "id": 9,
@@ -78,7 +78,7 @@
         "price": 8.50,
         "cant_gram": 250,
         "type": ["grano"],
-        "imagen":  "/data/images/paquetes/paquete.png"
+        "imagen":  "/data/images/paquetes/paquete.webp"
     },
     {
         "id": 10,
@@ -87,7 +87,7 @@
         "price": 5.50,
         "cant_gram": 250,
         "type": ["molido"],
-        "imagen":  "/data/images/paquetes/paquete.png"
+        "imagen":  "/data/images/paquetes/paquete.webp"
     },
     {
         "id": 11,
@@ -96,7 +96,7 @@
         "price": 6.00,
         "cant_gram": 250,
         "type": ["grano"],
-        "imagen":  "/data/images/paquetes/paquete.png"
+        "imagen":  "/data/images/paquetes/paquete.webp"
     },
     {
         "id": 12,
@@ -105,6 +105,6 @@
         "price": 7.00,
         "cant_gram": 250,
         "type": ["molido"],
-        "imagen": "/data/images/paquetes/paquete.png"
+        "imagen": "/data/images/paquetes/paquete.webp"
     }
 ]

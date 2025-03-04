@@ -6,7 +6,7 @@
         "price_capsula": 29.00,
         "cant_gram": 450,
         "type_capsula": ["molido"],
-        "imagen_capsula": "/data/images/paquetes/paquete.png"
+        "imagen_capsula": "/data/images/paquetes/paquete.webp"
     },
     {
         "id": 2,
@@ -15,7 +15,7 @@
         "price_capsula": 35.00,
         "cant_gram": 470,
         "type_capsula": ["ron"],
-        "imagen_capsula": "/data/images/paquetes/paquete.png"
+        "imagen_capsula": "/data/images/paquetes/paquete.webp"
     },
     {
         "id": 3,
@@ -24,7 +24,7 @@
         "price_capsula": 32.00,
         "cant_gram": 300,
         "type_capsula": ["molido"],
-        "imagen_capsula": "/data/images/paquetes/paquete.png"
+        "imagen_capsula": "/data/images/paquetes/paquete.webp"
     },
     {
         "id": 4,
@@ -33,7 +33,7 @@
         "price_capsula": 28.00,
         "cant_gram": 500,
         "type_capsula": ["grano"],
-        "imagen_capsula": "/data/images/paquetes/paquete.png"
+        "imagen_capsula": "/data/images/paquetes/paquete.webp"
     },
     {
         "id": 5,
@@ -42,7 +42,7 @@
         "price_capsula": 30.00,
         "cant_gram": 450,
         "type_capsula": ["grano"],
-        "imagen_capsula": "/data/images/paquetes/paquete.png"
+        "imagen_capsula": "/data/images/paquetes/paquete.webp"
     },
     {
         "id": 6,
@@ -51,7 +51,7 @@
         "price_capsula": 33.00,
         "cant_gram": 400,
         "type_capsula": ["molido"],
-        "imagen_capsula": "/data/images/paquetes/paquete.png"
+        "imagen_capsula": "/data/images/paquetes/paquete.webp"
     },
     {
         "id": 7,
@@ -69,7 +69,7 @@
         "price_capsula": 34.00,
         "cant_gram": 400,
         "type_capsula": ["molido"],
-        "imagen_capsula": "/data/images/paquetes/paquete.png"
+        "imagen_capsula": "/data/images/paquetes/paquete.webp"
     },
     {
         "id": 9,
@@ -78,7 +78,7 @@
         "price_capsula": 27.00,
         "cant_gram": 500,
         "type_capsula": ["molido"],
-        "imagen_capsula": "/data/images/paquetes/paquete.png"
+        "imagen_capsula": "/data/images/paquetes/paquete.webp"
     },
     {
         "id": 10,
@@ -87,7 +87,7 @@
         "price_capsula": 29.50,
         "cant_gram": 450,
         "type_capsula": ["molido"],
-        "imagen_capsula": "/data/images/paquetes/paquete.png"
+        "imagen_capsula": "/data/images/paquetes/paquete.webp"
     },
     {
         "id": 11,
@@ -96,7 +96,7 @@
         "price_capsula": 36.00,
         "cant_gram": 400,
         "type_capsula": ["grano"],
-        "imagen_capsula": "/data/images/paquetes/paquete.png"
+        "imagen_capsula": "/data/images/paquetes/paquete.webp"
     },
     {
         "id": 12,
@@ -105,7 +105,7 @@
         "price_capsula": 32.50,
         "cant_gram": 450,
         "type_capsula": ["molido"],
-        "imagen_capsula": "/data/images/paquetes/paquete.png"
+        "imagen_capsula": "/data/images/paquetes/paquete.webp"
     },
     {
         "id": 13,
@@ -114,7 +114,7 @@
         "price_capsula": 28.50,
         "cant_gram": 500,
         "type_capsula": ["grano"],
-        "imagen_capsula": "/data/images/paquetes/paquete.png"
+        "imagen_capsula": "/data/images/paquetes/paquete.webp"
     },
     {
         "id": 14,
@@ -123,7 +123,7 @@
         "price_capsula": 30.00,
         "cant_gram": 400,
         "type_capsula": ["molido"],
-        "imagen_capsula": "/data/images/paquetes/paquete.png"
+        "imagen_capsula": "/data/images/paquetes/paquete.webp"
     },
     {
         "id": 15,
@@ -132,7 +132,7 @@
         "price_capsula": 33.00,
         "cant_gram": 450,
         "type_capsula": ["grano"],
-        "imagen_capsula": "/data/images/paquetes/paquete.png"
+        "imagen_capsula": "/data/images/paquetes/paquete.webp"
     },
     {
         "id": 16,
@@ -141,6 +141,6 @@
         "price_capsula": 34.50,
         "cant_gram": 500,
         "type_capsula": ["molido"],
-        "imagen_capsula": "/data/images/paquetes/paquete.png"
+        "imagen_capsula": "/data/images/paquetes/paquete.webp"
     }
 ]
