@@ -1,0 +1,23 @@
+@keyframes slide {
+    0% {
+        background-position: 0 -1700%;
+    }
+    100% {
+        background-position: 0 1600%;
+    }
+}
+
+#hero #textMove {
+    background: url('/assets/brand/TextBackgroundIndex.svg');
+    background-size: contain;
+    background-repeat: repeat-y;
+    background-position: center;
+    animation: slide 5s linear infinite;
+}
+
+
+#hero #backgroundGrain {
+    background: url('/assets/resources/coffeeBackground.webp');
+    background-size: cover;
+    background-position: center;
+}

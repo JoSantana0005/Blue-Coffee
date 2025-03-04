@@ -7,7 +7,15 @@ import reactRefresh from 'eslint-plugin-react-refresh'
 export default [
   { ignores: ['dist'] },
   {
-    files: ['**/*.{js,jsx}'],
+    files: ['**/*.{ts,tsx, js,jsx}'],
+    parser: '@babel/eslint-parser',
+    parserOptions: {
+      requireConfigFile: false,
+      babelOptions: {
+        presets: ['@babel/preset-react'],
+        plugins: ['react-refresh/babel'],
+      },
+    },
     languageOptions: {
       ecmaVersion: 2020,
       globals: globals.browser,

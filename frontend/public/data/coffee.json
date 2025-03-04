@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "name": "Café Clásico",
+        "description": "Cápsula de café molido de 450 gramos, ideal para empezar el día.",
+        "price": 29.00,
+        "type": ["molido"],
+        "image": "/data/images/paquetes/paquete.webp",
+        "cant_gram": 450
+    },
+    {
+        "id": 2,
+        "name": "Expresso Intenso",
+        "description": "Cápsula de café molido de 300 gramos, para los amantes del sabor fuerte.",
+        "price": 25.00,
+        "type": ["molido"],
+        "image": "/data/images/paquetes/paquete.webp",
+        "cant_gram": 300
+    },
+    {
+        "id": 3,
+        "name": "Suave Aromas",
+        "description": "Cápsula de café molido de 500 gramos, con un aroma delicado y persistente.",
+        "price": 32.00,
+        "type": ["molido"],
+        "image": "/data/images/paquetes/paquete.webp",
+        "cant_gram": 500
+    },
+    {
+        "id": 4,
+        "name": "Descafeinado Natural",
+        "description": "Cápsula de café descafeinado de 450 gramos, disfruta sin cafeína.",
+        "price": 30.00,
+        "type": ["molido", "descafeinado"],
+        "image": "/data/images/paquetes/paquete.webp",
+        "cant_gram": 450
+    },
+    {
+        "id": 5,
+        "name": "Tostado Oscuro",
+        "description": "Cápsula de café molido de 400 gramos, con un tostado oscuro para un sabor robusto.",
+        "price": 28.00,
+        "type": ["molido"],
+        "image": "/data/images/paquetes/paquete.webp",
+        "cant_gram": 400
+    },
+    {
+        "id": 6,
+        "name": "Mezcla Especial",
+        "description": "Cápsula de café molido de 450 gramos, una mezcla única de granos selectos.",
+        "price": 31.00,
+        "type": ["molido"],
+        "image": "/data/images/paquetes/paquete.webp",
+        "cant_gram": 450
+    },
+    {
+        "id": 7,
+        "name": "Café Orgánico",
+        "description": "Cápsula de café molido orgánico de 450 gramos, cultivado sin pesticidas.",
+        "price": 35.00,
+        "type": ["molido", "orgánico"],
+        "image": "/data/images/paquetes/paquete.webp",
+        "cant_gram": 450
+    },
+    {
+        "id": 8,
+        "name": "Aromas de Montaña",
+        "description": "Cápsula de café molido de 450 gramos, con granos de altura para un sabor excepcional.",
+        "price": 33.00,
+        "type": ["molido"],
+        "image": "/data/images/paquetes/paquete.webp",
+        "cant_gram": 450
+    },
+    {
+        "id": 9,
+        "name": "Café con Leche",
+        "description": "Cápsula de café molido de 450 gramos, perfecto para un café con leche cremoso.",
+        "price": 27.00,
+        "type": ["molido"],
+        "image": "/data/images/paquetes/paquete.webp",
+        "cant_gram": 450
+    },
+    {
+        "id": 10,
+        "name": "Sabor Vainilla",
+        "description": "Cápsula de café molido de 450 gramos, con un toque de vainilla natural.",
+        "price": 34.00,
+        "type": ["molido", "aromatizado"],
+        "image": "/data/images/paquetes/paquete.webp",
+        "cant_gram": 450
+    }
+]

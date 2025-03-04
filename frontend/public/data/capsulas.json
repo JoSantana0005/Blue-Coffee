@@ -1,0 +1,92 @@
+[
+    {
+      "id": 1,
+      "name_capsula": "Cápsula de Café Arábica",
+      "description_capsula": "Café suave y aromático con notas florales y afrutadas.",
+      "price_capsula": 0.50,
+      "imagen_capsula": "/data/images/capsulas/capsula.webp",
+      "type_capsula": ["suave", "aromatico"],
+      "cant_grams": 5
+    },
+    {
+      "id": 2,
+      "name_capsula": "Cápsula de Café Robusta",
+      "description_capsula": "Café intenso y fuerte con un sabor robusto y cremoso.",
+      "price_capsula": 0.60,
+      "imagen_capsula": "/data/images/capsulas/capsula.webp",
+      "type_capsula": ["intenso", "cremoso"],
+      "cant_grams": 7
+    },
+    {
+      "id": 3,
+      "name_capsula": "Cápsula de Café Descafeinado",
+      "description_capsula": "Café suave sin cafeína, ideal para las noches.",
+      "price_capsula": 0.55,
+      "imagen_capsula": "/data/images/capsulas/capsula.webp",
+      "type_capsula": ["suave", "descafeinado"],
+      "cant_grams": 5
+    },
+    {
+      "id": 4,
+      "name_capsula": "Cápsula de Café Espresso",
+      "description_capsula": "Café concentrado y fuerte, perfecto para un espresso.",
+      "price_capsula": 0.70,
+      "imagen_capsula": "/data/images/capsulas/capsula.webp",
+      "type_capsula": ["intenso", "concentrado"],
+      "cant_grams": 7
+    },
+    {
+      "id": 5,
+      "name_capsula": "Cápsula de Café con Leche",
+      "description_capsula": "Mezcla equilibrada de café y leche para un sabor cremoso.",
+      "price_capsula": 0.65,
+      "imagen_capsula": "/data/images/capsulas/capsula.webp",
+      "type_capsula": ["cremoso", "suave"],
+      "cant_grams": 10
+    },
+    {
+      "id": 6,
+      "name_capsula": "Cápsula de Café Mocha",
+      "description_capsula": "Café con chocolate, ideal para los amantes del dulce.",
+      "price_capsula": 0.75,
+      "imagen_capsula": "/data/images/capsulas/capsula.webp",
+      "type_capsula": ["dulce", "chocolate"],
+      "cant_grams": 8
+    },
+    {
+      "id": 7,
+      "name_capsula": "Cápsula de Café Vainilla",
+      "description_capsula": "Café con un toque de vainilla para un sabor único.",
+      "price_capsula": 0.68,
+      "imagen_capsula": "/data/images/capsulas/capsula.webp",
+      "type_capsula": ["aromatico", "vainilla"],
+      "cant_grams": 6
+    },
+    {
+      "id": 8,
+      "name_capsula": "Cápsula de Café Caramelo",
+      "description_capsula": "Café con un suave toque de caramelo.",
+      "price_capsula": 0.72,
+      "imagen_capsula": "/data/images/capsulas/capsula.webp",
+      "type_capsula": ["dulce", "caramelo"],
+      "cant_grams": 7
+    },
+    {
+      "id": 9,
+      "name_capsula": "Cápsula de Café Avellana",
+      "description_capsula": "Café con un delicioso sabor a avellana.",
+      "price_capsula": 0.70,
+      "imagen_capsula": "/data/images/capsulas/capsula.webp",
+      "type_capsula": ["aromatico", "avellana"],
+      "cant_grams": 6
+    },
+    {
+      "id": 10,
+      "name_capsula": "Cápsula de Café Canela",
+      "description_capsula": "Café con un toque de canela para un sabor especiado.",
+      "price_capsula": 0.65,
+      "imagen_capsula": "/data/images/capsulas/capsula.webp",
+      "type_capsula": ["especiado", "canela"],
+      "cant_grams": 5
+    }
+  ]
