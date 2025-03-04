@@ -26,7 +26,7 @@ export default function Grano(){
                 coffee.map((item, index) => {
                     return (
                         <article key={index} className="flex flex-col h-full aspect-square gap-4 items-center justify-between">
-                        <img className="w-10" src={"/data/images/paquetes/paquete.webp"} alt={item.name} />
+                        <img className="w-10" src={item.image} alt={item.name} />
                             <p className="font-bold uppercase">{item.name}</p>
                             <p className="text-xs text-center w-1/2">{item.description}</p>
                             <p className="font-bold">{item.price}$ C/U</p>

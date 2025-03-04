@@ -1,5 +1,5 @@
 import React, {useState, useRef, useEffect, useContext} from "react";
-import { Link, useLocation } from "react-router";
+import { Link, useLocation, useNavigate } from "react-router";
 import './styles/navbar.css';
 import {User, ShoppingBasket, X} from "lucide-react";
 import { ShopContext } from "../../context/CartContext";
@@ -7,6 +7,8 @@ import { ShopContext } from "../../context/CartContext";
 export default function Navbar() {
 
     const location = useLocation();
+    const navigate = useNavigate();
+
     const shopContext = useContext(ShopContext);
     if (!shopContext) {
         return null;
@@ -36,7 +38,7 @@ export default function Navbar() {
             alert('No hay productos en el carrito');
             return;
         }
-        window.location.href = '/payment';
+        navigate('/payment');
     }
 
     return (

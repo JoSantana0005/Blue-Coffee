@@ -27,7 +27,7 @@ export default function TopCoffee(){
                 coffee.map((item, index) => {
                     return (
                         <article key={index} className="flex w-full gap-4 items-center">
-                            <img className="w-10" src={"/data/images/paquetes/paquete.webp"} alt={item.name} />
+                            <img className="w-10" src={item.image} alt={item.name} />
                             <p className="font-bold uppercase">{item.name}</p>
                             <p>{item.description}</p>
                             <p className="font-bold">{item.price}$ C/U</p>
