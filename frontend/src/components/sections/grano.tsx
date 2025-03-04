@@ -1,11 +1,13 @@
 import React, {useEffect, useState} from "react"
 import type Paquete from "../../types/Paquete"
 import AddCart from "../ui/AddCart"
+import { useNavigate } from "react-router"
 
 export default function Grano(){
 
     const [coffee, setCoffee] = useState<Paquete[]>([])
     const [loading, setLoading] = useState(true)
+    const navigate = useNavigate()
 
     useEffect(() => {
         const fetchData = async () => {
@@ -26,7 +28,7 @@ export default function Grano(){
                 coffee.map((item, index) => {
                     return (
                         <article key={index} className="flex flex-col h-full aspect-square gap-4 items-center justify-between">
-                        <img className="w-10" src={item.image} alt={item.name} />
+                            <img onClick={()=>navigate("/product/paquetes/"+item.id)} className="w-10 cursor-pointer" src={item.image} alt={item.name} />
                             <p className="font-bold uppercase">{item.name}</p>
                             <p className="text-xs text-center w-1/2">{item.description}</p>
                             <p className="font-bold">{item.price}$ C/U</p>

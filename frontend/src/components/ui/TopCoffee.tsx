@@ -1,12 +1,13 @@
 import React, {useEffect, useState} from "react"
 import type Paquete from "../../types/Paquete"
 import AddCart from "./AddCart"
-
+import { useNavigate } from "react-router"
 
 export default function TopCoffee(){
 
     const [coffee, setCoffee] = useState<Paquete[]>([])
     const [loading, setLoading] = useState(true)
+    const navigate = useNavigate()
 
     useEffect(() => {
         const fetchData = async () => {
@@ -27,7 +28,7 @@ export default function TopCoffee(){
                 coffee.map((item, index) => {
                     return (
                         <article key={index} className="flex w-full gap-4 items-center">
-                            <img className="w-10" src={item.image} alt={item.name} />
+                            <img onClick={()=>navigate("/product/paquetes/"+item.id)}  className="w-10" src={item.image} alt={item.name} />
                             <p className="font-bold uppercase">{item.name}</p>
                             <p>{item.description}</p>
                             <p className="font-bold">{item.price}$ C/U</p>

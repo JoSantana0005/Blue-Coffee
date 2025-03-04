@@ -6,6 +6,7 @@ import Login from './pages/login'
 import Register from './pages/register'
 import CartContextProvider from './context/CartContext'
 import Payment from './pages/payment'
+import Product from './pages/product'
 
 function App() {
 
@@ -14,6 +15,8 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route index element={<Home />} />
+          <Route path='/product/:id' element={<Product />} />
+          <Route path='/product/:product/:id' element={<Product />} />
           <Route path='/login' element={<Login />} />
           <Route path='/register' element={<Register />} />
           <Route path='/payment' element={<Payment />} />
