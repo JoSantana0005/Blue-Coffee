@@ -13,9 +13,14 @@ export default function Product() {
     const [product, setProduct] = useState<Paquete | Capsula | null>(null);
     const navigation = useLocation();
     let url = navigation.pathname.split('/')[2];
+    let port = 6060;
+
+    if (url === 'capsulas') {
+        port = 7070;
+    }
 
     useEffect(() => {
-        axios.get(`http://localhost:8080/${url}/${id}`)
+        axios.get(`http://localhost:${port}/${url}/${id}`)
         .then(res => {
             setProduct(res.data);
         })

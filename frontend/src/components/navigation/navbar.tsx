@@ -1,7 +1,7 @@
 import React, {useState, useRef, useEffect, useContext} from "react";
 import { Link, useLocation, useNavigate } from "react-router";
 import './styles/navbar.css';
-import {User, ShoppingBasket, X} from "lucide-react";
+import {User, ShoppingBasket, X,LogOut} from "lucide-react";
 import { ShopContext } from "../../context/CartContext";
 
 export default function Navbar() {
@@ -16,6 +16,12 @@ export default function Navbar() {
     const { cart, setCart, total, setTotal } = shopContext;
     const cartRef = useRef<HTMLDivElement>(null);
     const [isCartOpen, setIsCartOpen] = useState(false);
+    const hasToken = localStorage.getItem('token');
+
+    function leftAccount(){
+        localStorage.removeItem('token');
+        window.location.reload();
+    }
 
     function handleCart(){
         setIsCartOpen(!isCartOpen);
@@ -51,6 +57,7 @@ export default function Navbar() {
                 <Link to="/#packs">Packs</Link>
             </section>
             <section onClick={handleCart} id="accountSection" className="flex items-center gap-6">
+                {hasToken ? <LogOut onClick={leftAccount} color="red" size={40} className="hover:bg-primary cursor-pointer p-2 hover:rounded-full transition-all" />: null}
                 <Link to="/login"><User size={40} className="hover:bg-primary p-2 hover:rounded-full transition-all" /></Link>
                 <span><ShoppingBasket size={40} className="hover:bg-primary active:scale-95 p-2 hover:rounded-full transition-all cursor-pointer" /></span>
             </section>

@@ -9,7 +9,7 @@ export default function Packs(){
 
     useEffect(() => {
         const fetchData = async () => {
-            const response = await fetch("http://localhost:8080/capsulas");
+            const response = await fetch("http://localhost:7070/capsulas");
             const data = await response.json();
             setCapsulas(data.slice(0, 5));
         };
