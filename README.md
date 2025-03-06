@@ -9,7 +9,7 @@
 Para correr todos los servidores necesarios, simplemente ejecuta el siguiente comando:
 
 ```bash
-docker-compose up
+docker-compose up -d
 ```
 Esto levantará todos los servicios necesarios para que puedas comenzar a explorar y desarrollar en Blue Coffee.
 
