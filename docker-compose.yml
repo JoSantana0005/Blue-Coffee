@@ -3,9 +3,20 @@ services:
     build: ./frontend
     ports:
       - "3000:3000"
-    depends_on:
-      - backend
-  backend:
-    build: ./backend
+
+  capsulas:
+    build: ./capsulas
+    ports:
+      - "7070:7070"
+
+  paquetes:
+    build: ./paquetes
+    ports:
+      - "6060:6060"
+
+  users:
+    build: ./users
     ports:
       - "8080:8080"
+
+  
