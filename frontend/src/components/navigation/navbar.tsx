@@ -73,7 +73,7 @@ export default function Navbar() {
                     {
                     cart.map((item: any, index: number) => (
                         <section key={index} className="flex justify-between h-30 transition-all hover:bg-primary cursor-pointer rounded-xl p-4 gap-2 items-center">
-                            <img src={item.image || item.imagen_capsula} alt={item.name || item.name_capsula} className="w-1/4" />
+                            <img src={item.imagen || item.imagen_capsula} alt={item.name || item.name_capsula} className="w-1/4" />
                             <span className="text-sm w-1/2 font-bold">{item.name_capsula || item.name}</span>
                             <span className="flex w-20">$ {item.price || item.price_capsula}</span>
                         </section>
