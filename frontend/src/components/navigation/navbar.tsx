@@ -44,6 +44,10 @@ export default function Navbar() {
             alert('No hay productos en el carrito');
             return;
         }
+        if(!hasToken) {
+            alert("No tienes una cuenta creada")
+            return
+        }
         navigate('/payment');
     }
 
